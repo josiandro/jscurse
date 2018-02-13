@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funções</title>
+</head>
+<body>
+
+	<script>
+
+		// Estrutura simples
+
+		function nomedafuncao() {
+			return 1;
+		}	
+
+		nomedafuncao();
+
+		// ---------------------------------------
+
+
+		// Estrutura com parâmetro que funciona como uma váriavel local
+
+		// function funcaosoma(soma) {
+		// 	return ++soma;
+		// }
+
+		// funcaosoma();
+
+
+		// function media(nota1, nota2, nota3) {
+		// 	return ((nota1+nota2+nota2)/3);
+		// }
+
+		// media();
+
+		// ---------------------------------------
+
+
+		// var pessoa = {
+		// 	nome: 'Josiandro dos S. Silveira',
+		// 	idade: 26,
+		// 	profissao: 'Téncico em Informática',
+		// 	cidade: 'Sapiranga'
+		// }
+
+		// Funcão alterando uma vareavel que já existe
+
+		// function novapessoa (nome,idade,profissao,cidade) {
+		// 	pessoa.nome = nome;
+		// 	pessoa.idade = idade;
+		// 	pessoa.profissao = profissao;
+		// 	pessoa.cidade = cidade;
+		// };
+
+		// novapessoa();
+		
+
+		// function novapessoa2 (novaObjetoPessoa) {
+		// 	if (typeof novaObjetoPessoa == 'object') {
+		// 		pessoa = novaObjetoPessoa;
+		// 		return console.log('Nova pessoa adicionada');				
+		// 	} else {
+		// 		return console.log('Nenhuma pessoa adicionada');
+		// 	}
+		// };
+
+
+		// arguments variavel ambiente (de escopo, da função), como não foi passado um parâmetro na funcão, quando acrescentarmos um valor ele é colocado dentro de um array e (arguments) acessa esse array. 
+
+		function testeparametros() {
+			console.log(arguments);
+			return true;
+		}
+
+
+
+
+
+	
+		// Funções são blocos de construção fundamentais em JavaScript. Uma função é um procedimento de JavaScript - um conjunto de instruções que executa uma tarefa ou calcula um valor. Para usar uma função, você deve defini-la em algum lugar no escopo do qual você quiser chamá-la.
+
+	</script>
+			
+</body>
+</html>

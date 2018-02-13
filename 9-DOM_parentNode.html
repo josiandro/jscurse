@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM - parentNode</title>
+</head>
+<body>
+
+	<div id="linux">
+		
+		<div class="ubuntu">
+			Ubuntu
+			<div class="elementaryos">elementaryos</div>
+		</div>
+		<div class="debian">debian</div>
+
+	</div>
+
+	<script>
+		console.log(
+			document.querySelector(".elementaryos").parentNode.parentNode
+		)	
+
+		// parentNode é uma propriedade DOM que retorna o elemento pai do elemento em questão.
+	</script>
+
+</body>
+</html>

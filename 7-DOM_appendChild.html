@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM - appendChild</title>
+</head>
+<body>
+
+	<div id="nissan">
+		
+	</div>	
+
+	<script>
+		var versa = document.createElement("p");
+		versa.innerHTML = "versa";
+
+		var sentra = document.createElement("p");
+		sentra.innerHTML = "sentra";
+
+		document.getElementById("nissan").appendChild(versa);
+		document.getElementById("nissan").appendChild(sentra);
+
+		// Adicionar um elemento dentro do elemento pai citado no DOM.
+	</script>
+
+</body>
+</html>

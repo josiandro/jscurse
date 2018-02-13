@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Events - change</title>
+</head>
+<body>
+	
+	<input type="text" id="nome">
+	<input type="text" id="sobrenome">
+
+	<script>
+
+		var nome = document.getElementById("nome");
+		var sobrenome = document.getElementById("sobrenome");
+
+		nome.addEventListener("blur", function() {
+			sobrenome.value = this.value;
+		})
+
+		// O evento de blur é disparado quando um elemento perdeu o foco.
+
+	</script>
+			
+</body>
+</html>

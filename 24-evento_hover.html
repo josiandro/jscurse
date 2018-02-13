@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Events - click</title>
+	<style>
+		.tractive {
+			background-color: red;
+		}
+		.link {
+			text-decoration: none;
+			color: green;
+		}
+	</style>
+</head>
+<body>
+
+	<a href="#" id="link">
+		<h1>Olá</h1>
+	</a>
+
+	<table>
+		<thead>
+			<tr class="tr">
+				<td>Nome</td>
+				<td>Idade</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="tr">
+				<td>Josiandro</td>
+				<td>26</td>
+			</tr>
+			<tr class="tr">
+				<td>Antero</td>
+				<td>54</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script>
+
+		var link = document.getElementById("link");
+		var tr   = document.getElementsByClassName("tr");
+
+
+		link.addEventListener("mouseover", function() {
+			link.classList.add("link");
+		})
+
+		link.addEventListener("mouseleave", function() {
+			link.classList.remove("link");
+		})
+
+		
+		for (var i = 0; i < tr.length; i++) {
+			tr[i].addEventListener("mouseover", function() {
+				this.classList.add("tractive");
+			})
+			tr[i].addEventListener("mouseleave", function() {
+				this.classList.remove("tractive");
+			})
+		}
+
+	</script>
+			
+</body>
+</html>

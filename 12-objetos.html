@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM - Objetos</title>
+</head>
+<body>
+
+	<script>
+
+		// Como funciona:
+		// {
+		// 	indice: valor,
+		// 	indice: valor
+		// }
+
+		var carro = {
+				indice: "IRN-9267",
+				modelo: "Sedã",
+				marca: "Volkswagem",
+				opcionais: {
+					cambio: "manual",
+					combustivel: "flex"
+				},
+				"outra-coisa": "adfasdf"
+		};
+
+		console.log(carro["outra-coisa"]);
+		// console.log(carro.opcionais.cambio);
+
+		// Em JavaScript, um objeto é uma entidade independente, com propriedades e tipos. Por exemplo um carro, ele tem propriedades e tipos como cor, ano, modelo,marca, etc. Da mesma forma, objetos em JavaScript podem ter propriedades, que definem suas características.
+
+	</script>
+
+</body>
+</html>

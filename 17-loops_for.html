@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM - Loops</title>
+</head>
+<body>
+
+	<div class="js">react</div>
+	<div class="js">angular</div>
+	<div class="js">typescript</div>
+	<div class="js">es6</div>
+
+	<script>
+
+		// for (acessa um ARRAY normal e também o ARRAY da coleção HTML)
+
+		var js = document.getElementsByClassName('js');
+
+		for (let i = 0; i < js.length; i++) {
+			let texto = js[i].innerHTML;
+			
+			// console.log('Curso ' + texto + ' js'); // Aqui estou acrescentando as palavras CURSO e JS somente no console.
+			
+			js[i].innerHTML = 'Curso ' + texto + ' js'; // Aqui eu estou acrescentando as palavras CURSO e JS na coleção HTML.
+
+		}
+
+		
+	</script>
+			
+</body>
+</html>

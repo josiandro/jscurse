@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Events - click</title>
+</head>
+<body>
+
+	<p id="title">Meu botão</p>
+	<button id="btn">ok</button>
+
+	<script>
+
+	var click = 0;
+
+	window.onload = function() {
+		var botao = document.getElementById('btn');
+		var titulo = document.getElementById('title');
+
+		botao.addEventListener('click', function() { // Devemos passar um nome para o evento ('click') e depois passar a (Função).
+			console.log(++click)
+			titulo.remove();
+		})
+	}	
+
+	// O evento click event é disparado quando o botão de um dispositivo apontador (normalmente o botão de um mouse) é pressionado e solto logo em seguida em um mesmo elemento.
+
+	</script>
+			
+</body>
+</html>
