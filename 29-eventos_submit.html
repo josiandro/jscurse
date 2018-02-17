@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Events - Submit</title>
+
+	<style>
+		.error	{
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	
+	<form action="#" method="post">
+		<input type="text" name="name" value="josiandro">
+		<input type="email" name="email" value="josiandro.motog@gmail.com">
+		<button type="submit">enter</button>
+	</form>
+
+	<script>
+
+		var form = document.querySelector("form");
+
+		form.addEventListener("submit", function(evento) {
+			evento.preventDefault();//Impede a página de atualizar.
+			var isvalid = true;
+
+			for(var i = 0; i < this.elements.length; i++) {
+				var item = this.elements[i];
+
+				if (item.type !== "submit") {
+					if (item.value == "") {
+						item.classList.add("error");
+						isvalid = false;
+					} else {
+						item.classList.remove("error");
+					}
+				}
+			}
+
+			console.log(isvalid);
+
+		})
+
+		// O evento submit é disparado quando o formulário entre em estado de submit ou seja enviar os dados para algum local.
+
+	</script>
+			
+</body>
+</html>

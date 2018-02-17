@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Events - Submit</title>
+</head>
+<body>
+	
+	<p class="p1">Lorem2.</p>
+	<p>Lorem.</p>
+	<p id="p2"></p>
+	<p data-aula="p3"></p>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		var pJq = $(".p1")[0].innerHTML;
+		// var pJq = $(".p1")[0].remove();
+		console.log("Jquery:", pJq);
+
+		var pJs = document.querySelectorAll("p")[1].innerHTML;
+		console.log("JavaScript:", pJs);
+
+		// Da mesma forma que aprendamos sobre seletores no javascript puro, jQuery dispõe de uma simplicidade enorme para essa fase também.
+
+	</script>
+			
+</body>
+</html>

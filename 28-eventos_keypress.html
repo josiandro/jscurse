@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Events - Keypress</title>
+</head>
+<body>
+	
+	<input type="text" id="text">
+	<div id="result" style="display:none">é o enter uhu</div>
+
+	<script>
+		var text   = document.getElementById("text");
+		var result = document.getElementById("result");
+
+		const TECLAENTER = 13;
+
+		// text.addEventListener("keypress", function() {
+			// console.log("disparou", this.value);
+		// })
+
+		// text.addEventListener("keypress", function(evento) {	
+		// 	console.log(evento.keyCode);
+		// })
+
+		text.addEventListener("keypress", function(evento) {	
+			// if (evento.keyCode == 13) {
+			if (evento.keyCode == TECLAENTER) {
+				result.style.display = "block";
+			}
+		})
+
+
+		// O evento de keypress é disparado quando uma tecla é pressionada, ou seja encostar o dedão nela.
+
+	</script>
+			
+</body>
+</html>
