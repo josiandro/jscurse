@@ -2,25 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Events - Submit</title>
+	<title>Events - Efeitos</title>
+	<style>
+		.box {
+			position: relative;
+			left: 0;
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+		}
+	</style>
 </head>
 <body>
 	
-	<p class="p1">Lorem2.</p>
-	<p>Lorem.</p>
-	<p id="p2"></p>
-	<p data-aula="p3"></p>
+	<div class="box"></div>
+	<hr>
+	<div class="box"></div>
 
 	<script src="jquery-3.3.1.min.js"></script>
 	<script>
-		var pJq = $(".p1")[0].innerHTML;
-		// var pJq = $(".p1")[0].remove();
-		console.log("Jquery:", pJq);
+		var box = $(".box");
+		box.animate({
+			width:"200px",
+			height:"200px",
+			left:"500"
+		},1000)
 
-		var pJs = document.querySelectorAll("p")[1].innerHTML;
-		console.log("JavaScript:", pJs);
-
-		// Da mesma forma que aprendamos sobre seletores no javascript puro, jQuery dispõe de uma simplicidade enorme para essa fase também.
+		// jQuery é um cara recheado de opções para animar a interação do usuário, neste video vamos conhecer algumas possibilidades.
 
 	</script>
 			
